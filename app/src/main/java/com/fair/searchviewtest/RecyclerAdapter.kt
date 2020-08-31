@@ -36,7 +36,6 @@ class RecyclerAdapter(var list: ArrayList<String>): RecyclerView.Adapter<Recycle
         holder.itemView.itemHolder.text = filterList[position]
     }
 
-
     override fun getFilter(): Filter {
         return object : Filter() {
             override fun performFiltering(constraint: CharSequence?): FilterResults {
